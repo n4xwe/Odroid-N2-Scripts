@@ -18,3 +18,4 @@ WSJT-X by Joe Taylor, K1JT, and currently supported by a group of very talented 
 
 LinHPSDR, by John Melton, G0ORX, is an excellent standalone SDR Console that works with a variety of radios. It uses the WDSP library for signal processing. Script runtime time on an Odroid N2 is approximately 15 minutes.
 
+SDR Ionosonde, (n2-uhd_ionosonde.sh) is a script that installs the Python enabled Ionosonde TxRx code for the Ettus Research USRP Products.
