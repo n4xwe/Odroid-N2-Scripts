@@ -1,6 +1,6 @@
 #!/bin/sh
 #install GNU Radio(3.8.2) w/Osmocom w/hpsdr
-#N4XWE 12-16-2020
+#N4XWE 1-05-2021
 #Visit http://www.iquadlabs.com
 
 #Update the apt cache and upgrade the system packages to their latest versions
@@ -36,7 +36,7 @@ mkdir -p ~/src/GNURadio/volk/build && cd ~/src/GNURadio/volk/build
 cmake -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 ../ 
 
 #Compile the Volk library files
-make
+make -j3
 
 #Test the compiled Volk library files
 make test
@@ -68,7 +68,7 @@ mkdir -p ~/src/GNURadio/gnuradio/build && cd ~/src/GNURadio/gnuradio/build
 cmake -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 ..
 
 #Compile and install the gnuradio executable and support files
-make && sudo make install ||
+make -j3 && sudo make install ||
   { echo 'Unable to install gnuradio'; exit 1; }
   
 #Make the unique directory previously created for the GNU Radio compile the current directory 
