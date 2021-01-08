@@ -57,7 +57,7 @@ git clone https://github.com/gnuradio/gnuradio.git
 #Make the directory containing the gnuradio source code the current directory
 cd ~/src/GNURadio/gnuradio
 
-#Checkout the maintained version of GNU Radio 3.8 from the cloned GNU Radio repository
+#Checkout the maintained version of GNU Radio 3.9 from the cloned GNU Radio repository
 git checkout maint-3.9
 git submodule update --init --recursive
 
