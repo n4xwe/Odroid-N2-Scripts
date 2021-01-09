@@ -1,7 +1,7 @@
 #!/bin/sh
 #install GNU Radio(3.9) w/grnet w/digital_rf
-#N4XWE 1-08-2021
-#Visit http://www.iquadlabs.com
+#N4XWE 1-09-2021
+#Compiled on Ubuntu Mate 20.04 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt update && sudo apt upgrade -y
