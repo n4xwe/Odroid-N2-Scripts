@@ -1,7 +1,7 @@
 #!/bin/sh
 #install GNU Radio(3.9) w/grnet
 #N4XWE 1-06-2021
-#Visit http://www.iquadlabs.com
+#Compiled on Ubuntu Mate 18.04 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt update && sudo apt upgrade -y
