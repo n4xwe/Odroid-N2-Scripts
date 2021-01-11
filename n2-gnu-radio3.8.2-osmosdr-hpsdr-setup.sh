@@ -1,7 +1,7 @@
 #!/bin/sh
 #install GNU Radio(3.8.2) w/Osmocom w/hpsdr
 #N4XWE 1-05-2021
-#Visit http://www.iquadlabs.com
+#Compiled on Ubuntu Mate 18.04 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt update && sudo apt upgrade -y
