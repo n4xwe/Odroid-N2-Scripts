@@ -2,6 +2,7 @@
 #install LinHPSDR
 #N4XWE 12-16-2020
 #Compiled on Ubuntu Mate 18.04 64-bit
+#Compiled on Ubuntu Mate 26.04 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt -y update && sudo apt -y upgrade
