@@ -1,6 +1,6 @@
 #!/bin/sh
-#install wsjt-x (2.3.0-rc2) HamLib (4.0)
-#N4XWE 12-15-2020
+#install wsjt-x(2.3.0-rc3) HamLib(4.0)
+#N4XWE 1-11-2020
 #Compiled on Ubuntu Mate 18.04 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
@@ -55,14 +55,14 @@ export CFLAGS='-O2 -march=native -mtune=native'
 cd ~/src/WSJTX
 
 #Download the WSJT-X source code from Sourceforge
-wget -N https://sourceforge.net/projects/wsjt/files/wsjtx-2.3.0-rc2/wsjtx-2.3.0-rc2.tgz ||
+wget -N https://sourceforge.net/projects/wsjt/files/wsjtx-2.3.0-rc3/wsjtx-2.3.0-rc3.tgz ||
   { echo 'Unable to download the WSJT-X source code file'; exit 1; }
 
 #Extract the WSJT-X source code files
-tar -zxvf wsjtx-2.3.0-rc2.tgz
+tar -zxvf wsjtx-2.3.0-rc3.tgz
 
 #Create a directory for an indirect build of WSJT-X and make it the current directory
-mkdir -p ~/src/WSJTX/wsjtx-2.3.0-rc2/build && cd ~/src/WSJTX/wsjtx-2.3.0-rc2/build 
+mkdir -p ~/src/WSJTX/wsjtx-2.3.0-rc3/build && cd ~/src/WSJTX/wsjtx-2.3.0-rc3/build 
 
 #Configure the Makefile for the WSJT-X compile
 cmake ..
