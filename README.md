@@ -2,7 +2,7 @@
 
 BASH Scripts that Install Ham Radio Software on the Odroid N2
 
-These BASH scripts install either LinHPSDR, GNU Radio or WSJT-X on an Odroid N2, running the Ubuntu Mate Operating System. Except for the GNU Radio 3.9 w/gr-grnet script, all of the scripts have been tested on a 4GB Odroid N2 running the 64-bit version of Ubuntu Mate 18.04. The GNU Radio 3.9 w/gr-grnet script was written for and was tested on the 64-bit version of Ubuntu Mate 20.04.  They may or may not work successfully on other Operating Systems or other hardware
+These BASH scripts install either LinHPSDR, GNU Radio or WSJT-X on an Odroid N2, running the Ubuntu Mate Operating System. Except for the GNU Radio 3.9 w/gr-grnet w/gr-digital_rf script, all of the scripts have been tested on a 4GB Odroid N2 running the 64-bit version of Ubuntu Mate 18.04. The GNU Radio 3.9 w/gr-grnet w/gr-digital_rf script was written for and was tested on the 64-bit version of Ubuntu Mate 20.04.  They may or may not work successfully on other Operating Systems or other hardware.
 
 In order for an automated script to function correctly you must have a reasonable connection to the Internet. The suggested method of launching the scripts is to create a separate directory named src off of the $HOME directory (/home/odroid/src). Copy the script file to the src directory. Using the Command Line, change the file permissions of the script to allow its execution (chmod +x name-of-the script.sh is one method). From the command line preface the script name with a dot slash (./name-of-the-script.sh) and press the Enter key.
 
