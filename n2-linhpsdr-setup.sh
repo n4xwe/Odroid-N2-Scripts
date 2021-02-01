@@ -1,6 +1,6 @@
 #!/bin/sh
 #install LinHPSDR
-#N4XWE 12-16-2020
+#N4XWE 2-1-2021
 #Compiled on Ubuntu Mate 18.04 64-bit
 #Compiled on Ubuntu Mate 26.04 64-bit
 
@@ -20,11 +20,11 @@ mkdir -p ~/src/LINHPSDR && cd ~/src/LINHPSDR
 git clone https://github.com/g0orx/wdsp.git  ||
   { echo 'Unable to download wdsp'; exit 1; }
 
-#Make the directory containing the uncompressed wdsp source code the current directory
+#Change the directory containing the uncompressed wdsp source code to the current directory
 cd ~/src/LINHPSDR/wdsp
 
 #Compile and install the wdsp libraries
-make && sudo make install ||
+make -j 5 && sudo make install ||
    { echo 'Unable to install wdsp'; exit 1; }
 
 #Link the wdsp library files
@@ -41,7 +41,7 @@ git clone https://github.com/g0orx/linhpsdr.git ||
 cd ~/src/LINHPSDR/linhpsdr
 
 #Compile and install LinHPSDR
-make && sudo make install ||
+make -j 5 && sudo make install ||
   { echo 'Unable to install LinHPSDR'; exit 1; }
   
 
