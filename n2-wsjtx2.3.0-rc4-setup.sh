@@ -34,7 +34,7 @@ wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.0/hamlib-4.0.tar.
 #Extract the Hamlib source code files
 tar -xvzf hamlib-4.0.tar.gz
 
-#Make the directory containing the uncompressed Hamlib source code the current directory
+#Change the directory containing the uncompressed Hamlib source code to the current directory
 cd ~/src/WSJTX/hamlib-4.0
 
 #Configure the Makefile for the Hamlib compile
@@ -51,7 +51,7 @@ sudo ldconfig
 export CXXFLAGS='-O2 -march=native -mtune=native'
 export CFLAGS='-O2 -march=native -mtune=native'
                     
-#Make the unique directory previously created for the compile the current directory 
+#Change the unique directory previously created for the compile to the current directory 
 cd ~/src/WSJTX
 
 #Download the WSJT-X source code from Sourceforge
