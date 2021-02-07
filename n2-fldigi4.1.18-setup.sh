@@ -1,7 +1,7 @@
 
 #!/bin/sh
 #install fldigi(4.1.18) w/Hamlib(4.1) flrig(1.3.54) flwkey(1.2.3) 
-#N4XWE 2-1-2021
+#N4XWE 2-7-2021
 #Compiled on Ubuntu Mate 20.04 64-bit
 
 
