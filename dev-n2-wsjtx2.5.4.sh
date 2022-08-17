@@ -17,7 +17,7 @@ libusb-1.0-0-dev portaudio19-dev libsamplerate0-dev \
 libasound2-dev libao-dev libfftw3-dev libgsm1-dev libtiff-dev \
 libjpeg-dev libxft-dev libxinerama-dev libxcursor-dev \
 libboost-all-dev libqt5multimedia5 libqt5multimedia5-plugins \
-libqt5multimediaquick5 libreadline-dev libqt5multimediawidgets5 \
+libqt5multimediaquick-p5 libreadline-dev libqt5multimediawidgets5 \
 libqt5serialport5-dev libqt5svg5-dev libqt5widgets5 \
 libgd-dev libqt5sql5-sqlite libqwt-qt5-dev libsndfile1-dev \
 libudev-dev qtmultimedia5-dev texinfo xsltproc swig \
