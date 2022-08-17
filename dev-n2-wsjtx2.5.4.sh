@@ -1,6 +1,6 @@
 #!/bin/sh
-#install wsjt-x(2.3.1) HamLib(4.1)
-#N4XWE 4-30-2021
+#install wsjt-x(2.5.4) HamLib(4.4)
+#N4XWE 8-17-2022
 #Compiled on Ubuntu Mate 20.04 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
@@ -27,15 +27,15 @@ qttools5-dev qttools5-dev-tools qtbase5-dev-tools libindi-dev ||
 #Create a unique directory for the WSJT-X compile and make it the current directory
 mkdir -p ~/src/WSJTX && cd ~/src/WSJTX
 
-#Download the Hamlib 4.1 source code from Sourceforge
-wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.1/hamlib-4.1.tar.gz ||
+#Download the Hamlib 4.4 source code from Sourceforge
+wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.4/hamlib-4.4.tar.gz ||
   { echo 'Unable to download the HamLib source code file'; exit 1; }
   
 #Extract the Hamlib source code files
-tar -xvzf hamlib-4.1.tar.gz
+tar -xvzf hamlib-4.4.tar.gz
 
 #Make the directory containing the uncompressed Hamlib source code the current directory
-cd ~/src/WSJTX/hamlib-4.1
+cd ~/src/WSJTX/hamlib-4.4
 
 #Configure the Makefile for the Hamlib compile
 ./configure --prefix=/usr/local --enable-static
@@ -55,14 +55,14 @@ export CFLAGS='-O2 -march=native -mtune=native'
 cd ~/src/WSJTX
 
 #Download the WSJT-X source code from Sourceforge
-wget -N https://sourceforge.net/projects/wsjt/files/wsjtx-2.3.1/wsjtx-2.3.1.tgz ||
+wget -N https://sourceforge.net/projects/wsjt/files/wsjtx-2.5.4/wsjtx-2.5.4.tgz ||
   { echo 'Unable to download the WSJT-X source code file'; exit 1; }
 
 #Extract the WSJT-X source code files
-tar -zxvf wsjtx-2.3.1.tgz
+tar -zxvf wsjtx-2.5.4.tgz
 
 #Create a directory for an indirect build of WSJT-X and make it the current directory
-mkdir -p ~/src/WSJTX/wsjtx-2.3.1/build && cd ~/src/WSJTX/wsjtx-2.3.1/build 
+mkdir -p ~/src/WSJTX/wsjtx-2.5.4/build && cd ~/src/WSJTX/wsjtx-2.5.4/build 
 
 #Configure the Makefile for the WSJT-X compile
 cmake ..
