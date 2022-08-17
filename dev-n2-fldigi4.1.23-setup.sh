@@ -2,7 +2,7 @@
 #!/bin/sh
 #install fldigi(4.1.23) w/Hamlib(4.4) flrig(1.4.7) flwkey(1.2.3) 
 #N4XWE 8-17-2022
-#Compiled on Ubuntu Mate 20.04 64-bit
+#Compiled on Ubuntu MATE 20.04 64-bit
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
