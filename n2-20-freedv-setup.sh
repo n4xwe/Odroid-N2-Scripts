@@ -15,10 +15,10 @@ libspeex-dev libspeexdsp-dev libreadline-dev libhamlib-dev||
 	{ echo 'Dependency download failed'; exit 1;}
 
 #Create a 2GB swapfile
-sudo fallocate -l 2G /swapfile
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
+#sudo fallocate -l 2G /swapfile
+#sudo chmod 600 /swapfile
+#sudo mkswap /swapfile
+#sudo swapon /swapfile
 
 #Set the compiler optimization flags
 export CXXFLAGS='-O2 -march=native -mtune=native'
